@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <display-name>CalculationWebApp</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>xyz</servlet-name>
+    <servlet-class>com.ayush.servelets.Addition</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>xyz</servlet-name>
+    <url-pattern>/sum</url-pattern>
+  </servlet-mapping>
+</web-app>
